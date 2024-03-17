@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basic Calculator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Basic Calculator" id="BYZ-38-t0r" customClass="ViewController" customModule="Odev5_HesapMakinesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="operation " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gn-ZI-HxD">
+                                <rect key="frame" x="297.66666666666669" y="99" width="75.333333333333314" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vlp-DL-21F">
+                                <rect key="frame" x="311" y="247.66666666666663" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="AB5-vV-ZZu"/>
+                                    <constraint firstAttribute="height" constant="52" id="NkL-RJ-59Q"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="/">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="divideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTy-N1-PZQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DeU-Wu-8jC">
+                                <rect key="frame" x="311" y="344.66666666666669" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="g6f-vs-3UK"/>
+                                    <constraint firstAttribute="width" constant="52" id="hfY-LA-uah"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="X">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50588235294117645" green="0.22352941176470587" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="multiplyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uyk-pI-DQX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tv8-Tz-KSI">
+                                <rect key="frame" x="311" y="441.66666666666669" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="MqJ-E4-Jrx"/>
+                                    <constraint firstAttribute="width" constant="52" id="jEJ-OQ-SVj"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="-">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="37" name="AvenirNext-UltraLight"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ejectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWb-Iw-Nap"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRS-St-xqR">
+                                <rect key="frame" x="311" y="538.66666666666663" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="8vD-5m-n45"/>
+                                    <constraint firstAttribute="height" constant="52" id="Zh9-IU-aIu"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pgv-Zg-s9y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-gW-IOb">
+                                <rect key="frame" x="235" y="640.66666666666663" width="128" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="CzP-vb-r94"/>
+                                    <constraint firstAttribute="height" constant="52" id="yo7-qh-7mr"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="=">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="19" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="equalsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k34-7H-PAn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qzb-ZQ-CHw">
+                                <rect key="frame" x="20" y="345" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="S4R-qt-ciK"/>
+                                    <constraint firstAttribute="height" constant="52" id="tXu-4B-Dqw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82745098039215681" green="0.65098039215686276" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sevenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0M-iN-KAi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ye-n7-B9P">
+                                <rect key="frame" x="117" y="344" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="grG-kM-Rhv"/>
+                                    <constraint firstAttribute="height" constant="52" id="mFu-YW-hsl"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82745098039215681" green="0.65098039215686276" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="8">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="eightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nv3-Y4-qmD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vak-hp-2za">
+                                <rect key="frame" x="117" y="441" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ONw-nD-0zv"/>
+                                    <constraint firstAttribute="width" constant="52" id="o4c-nH-dvt"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="5">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fiveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAg-lV-Qlx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKp-0q-BHm">
+                                <rect key="frame" x="20" y="539" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="GYH-3W-OoG"/>
+                                    <constraint firstAttribute="height" constant="52" id="RHR-o3-pvH"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="1">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="oneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GOC-W7-pSg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7E7-Rl-hjk">
+                                <rect key="frame" x="117" y="538" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="uAA-pA-cet"/>
+                                    <constraint firstAttribute="width" constant="52" id="vuI-t5-Mm2"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="2">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="twoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MB-RB-Ivh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COM-IU-goK">
+                                <rect key="frame" x="20" y="248" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="2Si-eP-nS3"/>
+                                    <constraint firstAttribute="height" constant="52" id="PRO-6y-gkG"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="allClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nk-kb-UuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFn-Ba-NIs">
+                                <rect key="frame" x="117" y="247" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="dX3-VH-snB"/>
+                                    <constraint firstAttribute="width" constant="52" id="tX1-kS-6TL"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" image="delete.right" catalog="system" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="baseForegroundColor" red="0.50588235290000005" green="0.22352941179999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GM7-Hp-Kx7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-hS-kUA">
+                                <rect key="frame" x="20" y="442" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="7w1-hI-nDZ"/>
+                                    <constraint firstAttribute="height" constant="52" id="rwG-Sv-2MI"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="4">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fourButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ej1-Dy-Ad4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKp-2q-g6H">
+                                <rect key="frame" x="262.66666666666669" y="153" width="110.33333333333331" height="54.666666666666657"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.027450980392156862" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8p3-Te-uUR">
+                                <rect key="frame" x="214" y="441" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="e8j-M9-RTq"/>
+                                    <constraint firstAttribute="width" constant="52" id="vq3-VM-Ba3"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fiveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKG-rU-QR4"/>
+                                    <action selector="sixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SS3-et-9px"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-SQ-T5V">
+                                <rect key="frame" x="214" y="247" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="RLb-w7-nmt"/>
+                                    <constraint firstAttribute="height" constant="52" id="hxb-fh-qzS"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="%">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50709414480000004" green="0.22368210550000001" blue="0.43599325420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="percentageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="msK-OG-2gk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-Q2-2PG">
+                                <rect key="frame" x="214" y="538" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="f90-ki-kef"/>
+                                    <constraint firstAttribute="height" constant="52" id="k8q-Lg-VoG"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="3">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="threeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMe-up-wbs"/>
+                                    <action selector="twoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7n-Cr-biB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zR-Tp-wXG">
+                                <rect key="frame" x="214" y="344" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="iME-Cd-g4u"/>
+                                    <constraint firstAttribute="height" constant="52" id="kaJ-W8-p07"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="9">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fiveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmx-sB-B9p"/>
+                                    <action selector="nineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RjN-Rv-QLL"/>
+                                    <action selector="sixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZK-vP-GZM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2h1-tH-Xtu">
+                                <rect key="frame" x="115" y="640" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="AZi-f4-9CS"/>
+                                    <constraint firstAttribute="height" constant="52" id="Byv-iy-cgp"/>
+                                </constraints>
+                                <color key="tintColor" red="0.82886167990000004" green="0.65219383190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="AC">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="0">
+                                            <attributes>
+                                                <color key="NSColor" red="0.50563788659793807" green="0.22388070973776591" blue="0.41780138564425201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zeroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGt-4Q-EmX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.96779704678493728" blue="0.90953859230873213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vlp-DL-21F" firstAttribute="top" secondItem="oKp-2q-g6H" secondAttribute="bottom" constant="40" id="0Xy-Yn-4bK"/>
+                            <constraint firstItem="oRS-St-xqR" firstAttribute="top" secondItem="tv8-Tz-KSI" secondAttribute="bottom" constant="45" id="15Z-eE-Dbc"/>
+                            <constraint firstItem="OFn-Ba-NIs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="2Ej-u6-8zk"/>
+                            <constraint firstItem="7E7-Rl-hjk" firstAttribute="top" secondItem="Vak-hp-2za" secondAttribute="bottom" constant="45" id="4Gf-7Z-j2T"/>
+                            <constraint firstItem="tv8-Tz-KSI" firstAttribute="top" secondItem="DeU-Wu-8jC" secondAttribute="bottom" constant="45" id="4nj-PA-ZpI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oKp-2q-g6H" secondAttribute="trailing" constant="20" id="4q5-NO-ZIn"/>
+                            <constraint firstItem="COM-IU-goK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="189" id="7jd-oR-lKJ"/>
+                            <constraint firstItem="4Ye-n7-B9P" firstAttribute="top" secondItem="OFn-Ba-NIs" secondAttribute="bottom" constant="45" id="8r7-0K-9yu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DeU-Wu-8jC" secondAttribute="trailing" constant="30" id="DCz-OX-hhU"/>
+                            <constraint firstItem="tv8-Tz-KSI" firstAttribute="leading" secondItem="8p3-Te-uUR" secondAttribute="trailing" constant="45" id="Ddq-Nx-8Ov"/>
+                            <constraint firstItem="qzb-ZQ-CHw" firstAttribute="top" secondItem="COM-IU-goK" secondAttribute="bottom" constant="45" id="DnV-01-KMk"/>
+                            <constraint firstItem="HBt-hS-kUA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ECR-ew-mTa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NBE-gW-IOb" secondAttribute="trailing" constant="30" id="FSy-Cl-Sm4"/>
+                            <constraint firstItem="8p3-Te-uUR" firstAttribute="leading" secondItem="Vak-hp-2za" secondAttribute="trailing" constant="45" id="HOM-if-Kz4"/>
+                            <constraint firstItem="OFn-Ba-NIs" firstAttribute="leading" secondItem="COM-IU-goK" secondAttribute="trailing" constant="45" id="MYZ-k0-0Ct"/>
+                            <constraint firstItem="Qhi-SQ-T5V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="PRT-74-bYS"/>
+                            <constraint firstItem="DeU-Wu-8jC" firstAttribute="top" secondItem="vlp-DL-21F" secondAttribute="bottom" constant="45" id="PnR-EW-ZRl"/>
+                            <constraint firstItem="8zR-Tp-wXG" firstAttribute="top" secondItem="Qhi-SQ-T5V" secondAttribute="bottom" constant="45" id="Pud-gT-wJ6"/>
+                            <constraint firstItem="Vak-hp-2za" firstAttribute="top" secondItem="4Ye-n7-B9P" secondAttribute="bottom" constant="45" id="REg-SB-sVc"/>
+                            <constraint firstItem="qzb-ZQ-CHw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SwO-UQ-HsQ"/>
+                            <constraint firstItem="DeU-Wu-8jC" firstAttribute="leading" secondItem="8zR-Tp-wXG" secondAttribute="trailing" constant="45" id="UG0-PM-ImZ"/>
+                            <constraint firstItem="HBt-hS-kUA" firstAttribute="top" secondItem="qzb-ZQ-CHw" secondAttribute="bottom" constant="45" id="Ukj-Fh-nIx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vlp-DL-21F" secondAttribute="trailing" constant="30" id="WPC-Av-jRS"/>
+                            <constraint firstItem="oRS-St-xqR" firstAttribute="leading" secondItem="3GZ-Q2-2PG" secondAttribute="trailing" constant="45" id="WsB-Zl-KFA"/>
+                            <constraint firstItem="Qhi-SQ-T5V" firstAttribute="leading" secondItem="OFn-Ba-NIs" secondAttribute="trailing" constant="45" id="YxD-1L-8tk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tv8-Tz-KSI" secondAttribute="trailing" constant="30" id="Z5L-Gr-LoS"/>
+                            <constraint firstItem="3GZ-Q2-2PG" firstAttribute="top" secondItem="8p3-Te-uUR" secondAttribute="bottom" constant="45" id="ZCX-Fx-61k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Gn-ZI-HxD" secondAttribute="trailing" constant="20" id="aES-ke-RjX"/>
+                            <constraint firstItem="NBE-gW-IOb" firstAttribute="leading" secondItem="2h1-tH-Xtu" secondAttribute="trailing" constant="68" id="aJX-86-5h7"/>
+                            <constraint firstItem="vlp-DL-21F" firstAttribute="top" secondItem="oKp-2q-g6H" secondAttribute="bottom" constant="40" id="abK-z9-gI0"/>
+                            <constraint firstItem="fKp-0q-BHm" firstAttribute="top" secondItem="HBt-hS-kUA" secondAttribute="bottom" constant="45" id="c5i-zU-DUC"/>
+                            <constraint firstItem="fKp-0q-BHm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cdV-fh-nTj"/>
+                            <constraint firstItem="oKp-2q-g6H" firstAttribute="top" secondItem="0Gn-ZI-HxD" secondAttribute="bottom" constant="32" id="dd1-Rz-sgj"/>
+                            <constraint firstItem="NBE-gW-IOb" firstAttribute="top" secondItem="oRS-St-xqR" secondAttribute="bottom" constant="50" id="hjh-v2-12M"/>
+                            <constraint firstItem="vlp-DL-21F" firstAttribute="leading" secondItem="Qhi-SQ-T5V" secondAttribute="trailing" constant="45" id="iIa-22-WWq"/>
+                            <constraint firstItem="2h1-tH-Xtu" firstAttribute="top" secondItem="7E7-Rl-hjk" secondAttribute="bottom" constant="50" id="kc4-vC-62t"/>
+                            <constraint firstItem="3GZ-Q2-2PG" firstAttribute="leading" secondItem="7E7-Rl-hjk" secondAttribute="trailing" constant="45" id="n3B-Pt-z3L"/>
+                            <constraint firstItem="8p3-Te-uUR" firstAttribute="top" secondItem="8zR-Tp-wXG" secondAttribute="bottom" constant="45" id="pLO-HP-2Ew"/>
+                            <constraint firstItem="0Gn-ZI-HxD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="rDI-da-TIB"/>
+                            <constraint firstItem="4Ye-n7-B9P" firstAttribute="leading" secondItem="qzb-ZQ-CHw" secondAttribute="trailing" constant="45" id="teq-nT-Iun"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oRS-St-xqR" secondAttribute="trailing" constant="30" id="w0O-Gj-OMY"/>
+                            <constraint firstItem="8zR-Tp-wXG" firstAttribute="leading" secondItem="4Ye-n7-B9P" secondAttribute="trailing" constant="45" id="xIt-4R-9QZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="operationLabel" destination="0Gn-ZI-HxD" id="6Bv-Ug-ZpR"/>
+                        <outlet property="resultLabel" destination="oKp-2q-g6H" id="cku-55-CyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete.right" catalog="system" width="128" height="102"/>
+    </resources>
+</document>
